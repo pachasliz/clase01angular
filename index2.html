@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app>
+<script src="scrips/angular.min.js">
+	
+</script>
+<style type="text/css">
+	.ok{
+		color: red;
+	}
+	.fm{
+		color: blue;
+	}
+	.M{
+		color: blue;
+	}
+</style>
+<head>
+	<title></title>
+</head>
+<body ng-init="alumnos=['Liliana Pachas','Carlos Alvarado','Junior Tolentino']">
+<h1>ASISTENCIA</h1>
+
+<p ng-repeat="alumno in alumnos" class="{{check}}">
+<input type="checkbox" name="" ng-model="check" ng-true-value="'ok'" id="checks">
+<label for="checks">{{alumno}}</label>
+</p>
+<input type="text" ng-model="nAlumno">
+<button ng-click="alumnos.push(nAlumno); nAlumno='' ">Agregar Alumnos</button>
+
+</body>
+</html>

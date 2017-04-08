@@ -1,0 +1,18 @@
+*manipulación del dom
+
+
+-Temas event loop  
+-Validar el codigo data-ng-init---
+correo info.fullsta
+**crup
+
+**instalar git 
+**Inicializar git init
+ver el estado -> git status
+subir :
+-git add angular.min.js
+git add . (todos)
+
+add 
+git remote add origin https://github.com/pachasliz/clase01angular.git ==> se sincroniza con mi pc
+
