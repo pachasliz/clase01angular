@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+<script src="scrips/angular.min.js">
+	
+</script>
+<style type="text/css">
+	.tachar{
+		text-decoration: line-through;
+	}
+</style>
+<head>
+	<title></title>
+</head>
+<body ng-init="tareas=['Limpiar mi cuarto','Pasear al pero','Cocinar','StalKearññññ']">
+<span></span>
+{{4+2}}
+<input type="text" name="" ng-model="name">
+
+<h1>Hola {{name}}</h1>
+
+<!--<p>Tareas por hacer1</p>
+<p>Tareas por hacer2</p>
+<p>Tareas por hacer3</p>
+<p>Tareas por hacer4</p>
+<p>Tareas por hacer5</p>
+<p>Tareas por hacer6</p>-->
+
+<p ng-repeat="tarea in tareas" class="{{check}}">
+<input type="checkbox" ng-model="check" ng-true-value="'tachar'" >
+{{tarea}}
+
+</p>
+<input type="" name="" ng-model="dato">
+	<button ng-click="tareas.push(dato)">agregar</button>
+</body>
+</html>
